@@ -1,7 +1,12 @@
+.content_wrapper {
+  width: 100%;
+}
 .main_content {
+  width: 100%;
   display: flex;
   flex-direction: column;
   background-color: #cbecff;
+  padding: 0 60px;
 }
 .languages_btn_wrapper {
   display: flex;
@@ -63,7 +68,6 @@
   line-height: 29px;
   letter-spacing: 0em;
   text-align: left;
-  margin-bottom: 20px;
 }
 .btn {
   width: 199px;
@@ -81,6 +85,7 @@
   letter-spacing: 0em;
   text-align: center;
   cursor: pointer;
+  margin-top: 20px;
 }
 .characteristics {
   display: flex;
@@ -100,17 +105,20 @@
   font-weight: 500;
   line-height: 22px;
   letter-spacing: 0em;
-  text-align: left;
   color: #29374e;
   margin-left: 10px;
   position: relative;
   top: 40px;
+  padding: 0 10px;
 }
 .products {
   width: 100%;
   padding-top: 150px;
+  padding-left: 60px;
+  /* padding-right: 60px; */
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .text_header {
   width: 100%;
@@ -161,6 +169,7 @@
 }
 .values_block {
   display: flex;
+  margin-top: 90px;
 }
 .values_block_about_us {
   width: 500px;
@@ -172,4 +181,63 @@
 }
 .value_item {
   width: 230px;
+}
+
+@media (max-width: 1100px) {
+  .about_us {
+    width: 100%;
+  }
+  .main_photo_wrapper {
+    margin-left: 90px;
+    overflow: hidden;
+  }
+  .main_photo_wrapper img {
+    object-fit: cover;
+  }
+  .platforms {
+    flex-direction: column;
+  }
+  .platform {
+    margin-bottom: 40px;
+  }
+  .values_block {
+    flex-direction: column;
+  }
+  .values {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .about_us {
+    flex-direction: column-reverse;
+  }
+  .quality {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 800px) {
+  .main_content {
+    max-width: 100%;
+  }
+  .main_photo_wrapper img {
+    width: 500px;
+  }
+}
+@media (max-width: 550px) {
+  .main_photo_wrapper img {
+    width: 450px;
+  }
+  .characteristics {
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  .quality {
+    width: 164px;
+    position: static;
+    margin-top: 15px;
+  }
 }
